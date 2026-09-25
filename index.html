@@ -6,11 +6,15 @@
     <title>KHÉO - Trải nghiệm DIY Mây Tre Đan</title>
     <!-- Sử dụng Tailwind CSS qua CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font chữ -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font chữ hỗ trợ 100% Tiếng Việt (Be Vietnam Pro và Merriweather) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #FAFAFA; color: #333; }
-        .font-serif { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #FAFAFA; color: #333; }
+        .font-serif { font-family: 'Merriweather', serif; }
         .bg-beige { background-color: #F4F1EA; }
         .text-indigo { color: #2C3E50; } /* Màu xanh chàm đậm */
         .bg-indigo { background-color: #2C3E50; }
@@ -198,15 +202,14 @@
             <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Chúng tôi là đội ngũ sinh viên khối ngành Kinh tế và Quản lý Chuỗi cung ứng. KHÉO ra đời từ khát khao ứng dụng tư duy quản trị vận hành, logistics và nghiên cứu R&D vào một mô hình kinh doanh bền vững, nhằm đưa các kỹ thuật thủ công truyền thống vươn xa.</p>
             
             <div class="flex flex-wrap justify-center gap-10">
-                <!-- Sửa lại số lượng và vai trò tùy theo nhóm của bạn nhé -->
                 <div class="text-center">
                     <img src="https://i.pinimg.com/736x/25/88/a9/2588a9e04ae90d022d4580d6568ff7e9.jpg" alt="Thành viên 1" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md">
                     <h3 class="font-bold text-lg">Thành viên 1</h3>
                     <p class="text-sm text-indigo">Phát triển Sản phẩm & R&D</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://i.pinimg.com/1200x/fd/3a/f8/fd3af889c28f340fd261729963bdefb9.jpg" alt="Thành viên 2" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md">
-                    <h3 class="font-bold text-lg">Thành viên 2</h3>
+                    <img src="https://i.pinimg.com/1200x/fd/3a/f8/fd3af889c28f340fd261729963bdefb9.jpg" alt="Trần Nguyễn Hoàng" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md">
+                    <h3 class="font-bold text-lg">Trần Nguyễn Hoàng</h3>
                     <p class="text-sm text-indigo">Vận hành & Chuỗi Cung Ứng</p>
                 </div>
                 <div class="text-center">
@@ -220,19 +223,13 @@
 
     <!-- Footer -->
     <footer class="bg-indigo text-white py-12 px-4">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Đổi thành lưới 2 cột thay vì 3 cột sau khi xóa Liên Kết Nhanh -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
                 <div class="font-serif text-3xl font-bold mb-4 tracking-wider">KHÉO.</div>
                 <p class="text-sm text-gray-400 mb-4">Tất cả các bộ kit DIY đều tích hợp mã QR dẫn đến thư viện video hướng dẫn chi tiết và câu chuyện về nguồn gốc kỹ thuật đan từ các làng nghề.</p>
             </div>
-            <div>
-                <h4 class="font-bold mb-4">Liên Kết Nhanh</h4>
-                <ul class="text-sm text-gray-400 space-y-2">
-                    <li><a href="#" class="hover:text-white">Kiểm chứng người dùng (Beta)</a></li>
-                    <li><a href="#" class="hover:text-white">Chính sách vận chuyển</a></li>
-                    <li><a href="#" class="hover:text-white">Đăng ký làm đối tác (Nghệ nhân)</a></li>
-                </ul>
-            </div>
+            
             <div>
                 <h4 class="font-bold mb-4">Nhận thông tin đợt mở bán</h4>
                 <div class="flex">
@@ -242,7 +239,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto text-center mt-12 text-sm text-gray-500 pt-8 border-t border-gray-700">
-            &copy; 2026 Dự án KHÉO Startup. Dành cho mục đích thuyết trình.
+            &copy; 2026 Dự án KHÉO Startup. Sản phẩm phục vụ mục đích tham gia cuộc thi học thuật.
         </div>
     </footer>
 
